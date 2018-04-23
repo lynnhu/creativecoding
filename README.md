@@ -1,2 +1,2 @@
-# creativecoding
-Projects from Gray Area Immersive 2018 One
+# Gray Area Immersive
+Projects from the Immersive 2018 Session 1
