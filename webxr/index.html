@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First Scene</title>
+  <meta name="description" content="Lynn's First Scene">
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+</head>
+
+<body>
+  <a-scene>
+    <!-- Setting up assets -->
+    <a-assets>
+      <a-asset-item id="island" src="assets/models/low_poly_trees/scene.gltf">
+      </a-asset-item>
+    </a-assets>
+
+    <a-gltf-model src="#island" position="0 7 -6" scale = "0.3 0.3 0.3">
+      <a-animation attribute="position" to="0 6 -6" direction="alternate" dur="2000" repeat="indefinite">
+    </a-gltf-model>
+
+    <!-- Aframe preset environment -->
+    <a-entity environment="preset: forest; ground: spikes;"></a-entity>
+
+    <!-- Camera position -->
+    <a-entity position="-1.245 9 2.126" camera look-controls></a-entity>
+  </a-scene>
+</body>
+</html>
